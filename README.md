@@ -1,7 +1,8 @@
-# ember-tasks
+# Ember Task Manager
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+This project is a simple CRUD application using ember.js and firebase.
+![EmberTaskManagerDemo](/img/emberTasksDemo.gif) 
+
 
 ## Prerequisites
 

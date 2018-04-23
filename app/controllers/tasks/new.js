@@ -8,7 +8,21 @@ export default Controller.extend({
       let date = this.get('date'); 
 
       // Create New Task
-      // let newTask = this.store.createRecord(); 
+      let newTask = this.store.createRecord('task', {
+        title: title, 
+        description: description, 
+        date: new Date(date)
+      }); 
+
+      // Save to firebase
+      newTask.save(); 
+
+      // Clear Form
+      this.setProperties({
+        title: '', 
+        description: '', 
+        date: ''
+      }); 
     }
   }
 });

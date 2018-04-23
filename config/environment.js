@@ -1,9 +1,19 @@
-'use strict';
+// 'use strict';
 
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'ember-tasks',
-    environment,
+    environment: environment,
+    contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    // firebase: 'https://emberproject-1.firebaseio.com/', // OLD METHOD
+    firebase: {
+      apiKey: 'xyz',
+      authDomain: 'emberproject-1.firebaseapp.com',
+      databaseURL: 'https://emberproject-1.firebaseio.com/',
+      storageBucket: 'emberproject-1.appspot.com',
+    },
+    
+    
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
