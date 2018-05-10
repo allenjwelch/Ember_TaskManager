@@ -1,6 +1,7 @@
 # Ember Task Manager
 
 This project is a simple CRUD application using ember.js and firebase.
+
 ![EmberTaskManagerDemo](/img/emberTasksDemo.gif) 
 
 
